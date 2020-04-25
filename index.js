@@ -28,10 +28,34 @@ const walls = [
 World.add(world, walls);
 
 const grid = Array(cells).fill(null).map(() => Array(cells).fill(false));
-const verticals = Array(cells).fill(null).map(() => Array(2).fill(false));
-const horizontals = Array(2).fill(null).map(() => Array(cells).fill(false));
+const verticals = Array(cells).fill(null).map(() => Array(cells - 2).fill(false));
+const horizontals = Array(cells - 2).fill(null).map(() => Array(cells).fill(false));
 
-console.log(horizontals);
+const startRow = Math.floor(Math.random() * cells);
+const startColumn = Math.floor(Math.random() * cells);
+
+const stepThroughCell = (row, column) => {
+  // If i visited the cell at (row, column), then return
+
+  // Mark this cell as being visited
+
+  // Assamble randomly-order list of neighbors
+
+  // For each neighbor...
+
+  // See if that neighbor is out of bounds
+
+  // If we have visited that neighbor, continue to nex neighbor
+
+  // Remove a wall from either horizontals or verticals
+
+  // Visited taht next cell
+
+};
+
+stepThroughCell(startRow, startColumn);
+
+console.log(startRow, startColumn);
 
 
 
