@@ -26,5 +26,9 @@ const walls = [
 ];
 World.add(world, walls);
 
+const grid = Array(3).fill(null).map(() => Array(3).fill(false));
+
+console.log(grid);
+
 
 
